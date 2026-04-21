@@ -1,10 +1,10 @@
-# 🏛️ Smart Campus Sensor & Room Management API
+# Smart Campus Sensor & Room Management API
 
 [![Java 17](https://img.shields.io/badge/Java-17-blue.svg)](https://www.oracle.com/java/)
 [![JAX-RS](https://img.shields.io/badge/JAX--RS-3.1-orange.svg)](https://jakarta.ee/specifications/restful-ws/)
 [![Maven](https://img.shields.io/badge/Maven-3.0+-green.svg)](https://maven.apache.org/)
 
-## 📑 Table of Contents
+## Table of Contents
 - [Project Overview](#1-project-overview)
 - [How to Build & Run](#2-how-to-build--run)
 - [Sample cURL Commands](#3-sample-curl-commands-api-demonstration)
@@ -12,12 +12,12 @@
 
 ---
 
-## 1. 🚀 Project Overview
+## 1. Project Overview
 This project is a high-performance RESTful web service built using Java and JAX-RS (Jakarta RESTful Web Services), specifically the Jersey framework powered by a built-in Grizzly HTTP server.
 
 It is designed to manage university 'Smart Campus' infrastructure, including `Rooms`, `Sensors` (e.g. CO2, Temperature), and historical nested `SensorReadings`. Per assignment constraints, this application solely utilizes basic Java mapping techniques (`ConcurrentHashMap`) acting as an in-memory datastore rather than an external database. It implements strict layered error handling with appropriate HTTP status codes (409, 422, 403, 500) and API-wide traffic logging.
 
-## 2. 🛠️ How to Build & Run
+## 2. How to Build & Run
 **Prerequisites:** You must have Java 17 and Maven 3+ installed and configured on your system path.
 
 1. Clone the repository and navigate into the root directory of the project in terminal.
@@ -32,7 +32,7 @@ It is designed to manage university 'Smart Campus' infrastructure, including `Ro
 4. The server will launch immediately and listen for requests at: `http://localhost:8080/api/v1`
 5. Press `ENTER` directly in the terminal where it's running when you are ready to cleanly shut down the server process.
 
-## 3. 🧪 Sample cURL Commands (API Demonstration)
+## 3. Sample cURL Commands (API Demonstration)
 
 Here are five key endpoints demonstrating integration with varying parts of the API:
 
@@ -70,7 +70,7 @@ curl -X POST http://localhost:8080/api/v1/sensors/LUM-66/readings \
 
 ***
 
-## 4. 📝 Assessment Conceptual Report (Q&A)
+## 4. Assessment Conceptual Report (Q&A)
 
 **Part 1: Service Architecture & Setup**
 
