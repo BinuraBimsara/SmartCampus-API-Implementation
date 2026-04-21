@@ -1,0 +1,15 @@
+# Maven target folder
+target/
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+*.eclipse
+
+# Exclude coursework documents and Docs folder
+Docs/
+*.pdf
+*.xlsx
+*.csv
+*.txt
